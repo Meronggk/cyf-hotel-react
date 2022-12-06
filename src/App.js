@@ -2,6 +2,7 @@ import React from "react";
 
 import Bookings from "./Bookings";
 import "./App.css";
+import SearchButton from "./SearchButton";
 
 const App = () => {
   return (
