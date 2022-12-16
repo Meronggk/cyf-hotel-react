@@ -1,7 +1,7 @@
 import React from "react";
-import london from "./image/london.jpg";
-import manchester from "./image/manchester.jpg";
-import glasgow from "./image/glasgow.jpg";
+import london from "../image/london.jpg";
+import manchester from "../image/manchester.jpg";
+import glasgow from "../image/glasgow.jpg";
 
 const TouristInfoCards = () => {
   return (

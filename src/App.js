@@ -1,9 +1,9 @@
 import React from "react";
-import Heading from "./Heading";
-import TouristInfoCards from "./TouristInfoCards";
-import Footer from "./Footer";
+import Heading from "./components/Heading";
+import TouristInfoCards from "./components/TouristInfoCards";
+import Footer from "./components/Footer";
 
-import Bookings from "./Bookings";
+import Bookings from "./components/Bookings";
 import "./App.css";
 
 const data = [
@@ -11,7 +11,6 @@ const data = [
   "hello@fakehotel.com",
   "0123 456789"
 ];
-// console.log({data});
 
 const App = () => {
   return (
