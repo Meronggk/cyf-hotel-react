@@ -6,13 +6,20 @@ import Footer from "./Footer";
 import Bookings from "./Bookings";
 import "./App.css";
 
+const data = [
+  "123 Fake Street, London, E1 4UD",
+  "hello@fakehotel.com",
+  "0123 456789"
+];
+// console.log({data});
+
 const App = () => {
   return (
     <div className="App">
       <Heading />
       <TouristInfoCards />
       <Bookings />
-      <Footer />
+      <Footer data={data} />
     </div>
   );
 };

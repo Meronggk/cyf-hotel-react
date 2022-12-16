@@ -1,14 +1,16 @@
 import React from "react";
 
-const Footer = () => {
+const Footer = ({ data }) => {
   return (
-    <div>
-      <ul>
-        <li>123 Fake Street, London, E1 4UD</li>
-        <li>hello@fakehotel.com</li>
-        <li>0123 456789</li>
-      </ul>
-    </div>
+    <ul className="footer">
+      {data.map((item, index) => {
+        return (
+          <li key={index} style={{ listStyle: "none" }}>
+            {item}
+          </li>
+        );
+      })}
+    </ul>
   );
 };
 
