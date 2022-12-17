@@ -94,3 +94,12 @@ tr {
 .btn btn-primary {
   margin-bottom: 30px;
 }
+th {
+  width: 400px;
+  font-size: 15px;
+  font-weight: bolder;
+}
+/* th {
+  width: 10rem;
+  text-align: center;
+} */

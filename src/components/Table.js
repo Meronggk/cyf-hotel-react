@@ -1,20 +1,19 @@
 import React from "react";
 
-const Table = () => {
+const Table = result => {
   return (
-    <div>
-      <table>
+    <div className="table">
+      <tbody>
         <tr>
-          <th col="1">id</th>
-          <th col="1">title</th>
-          <th col="1">first name</th>
-          <th col="1">surname</th>
-          <th col="1">email</th>
-          <th col="1">room id</th>
-          <th col="1">check in date</th>
-          <th col="1">check out date</th>
+          <th>Id</th>
+          <th>FirstName</th>
+          <th>SurName</th>
+          <th>Email</th>
+          <th>Room Id</th>
+          <th>Check in date</th>
+          <th>Check out date</th>
         </tr>
-      </table>
+      </tbody>
     </div>
   );
 };
