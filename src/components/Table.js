@@ -8,9 +8,7 @@ function Table() {
     fetch(`https://cyf-react.glitch.me/`)
       .then(response => response.json())
       .then(data => {
-        // console.log(actualData);
         setData(data);
-        // console.log(data);
       })
       .catch(err => {
         console.log(err.message);
@@ -42,11 +40,6 @@ function Table() {
             <td>{item.roomId}</td>
             <td>{item.checkInDate}</td>
             <td>{item.checkOutDate}</td>
-            {/* <td>
-              <img src={item.thumbnail} alt="" height={100} />
-            </td> */}
-            {/* <td>{item.price}</td>
-            <td>{item.rating}</td> */}
           </tr>
         ))}
       </tbody>
