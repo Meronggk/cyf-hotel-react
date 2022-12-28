@@ -1,9 +1,12 @@
 import React from "react";
 import { useEffect, useState } from "react";
+import moment from "moment";
 
-function Table() {
+function Table({ checkInDate, checkOutDate }) {
+  const checkIn = moment(checkInDate);
+  const checkOut = moment(checkOutDate);
+  console.log(moment);
   const [data, setData] = useState([]);
-
   const fetchData = () => {
     fetch(`https://cyf-react.glitch.me/`)
       .then(response => response.json())
@@ -18,6 +21,7 @@ function Table() {
   useEffect(() => {
     fetchData();
   }, []);
+
   return (
     <div className="table">
       <tbody>
@@ -29,6 +33,7 @@ function Table() {
           <th>Room Id</th>
           <th>Check in date</th>
           <th>Check out date</th>
+          <th>Number of nights</th>
         </tr>
 
         {data.map((item, index) => (
@@ -40,6 +45,7 @@ function Table() {
             <td>{item.roomId}</td>
             <td>{item.checkInDate}</td>
             <td>{item.checkOutDate}</td>
+            <td>{checkOut.diff(checkIn, "days")}</td>
           </tr>
         ))}
       </tbody>
