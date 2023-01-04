@@ -3,6 +3,8 @@ import { useEffect, useState } from "react";
 import moment from "moment";
 
 function Table({ checkInDate, checkOutDate }) {
+  const [select, setSelect] = useState();
+
   const checkIn = moment(checkInDate);
   const checkOut = moment(checkOutDate);
   console.log(moment);
@@ -37,7 +39,12 @@ function Table({ checkInDate, checkOutDate }) {
         </tr>
 
         {data.map((item, index) => (
-          <tr key={index}>
+          <tr
+            key={index}
+            className="table-row"
+            style={{ backgroundColor: `${select ? "grey" : "white"}` }}
+            onClick={() => setSelect(!select)}
+          >
             <td>{item.id}</td>
             <td>{item.firstName}</td>
             <td>{item.surname}</td>
