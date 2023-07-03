@@ -80,7 +80,7 @@ tr {
 }
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  padding: 16px;
+  padding: 17px;
   text-align: center;
   background-color: #f1f1f1;
   margin-top: 30px;
@@ -88,7 +88,6 @@ tr {
   margin-left: 70px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  width: 100%;
   height: 100%;
 }
 .btn btn-primary {
@@ -99,10 +98,7 @@ th {
   font-size: 15px;
   font-weight: bolder;
 }
-/* th {
-  width: 10rem;
-  text-align: center;
-} */
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
