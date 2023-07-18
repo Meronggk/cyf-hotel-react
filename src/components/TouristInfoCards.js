@@ -9,7 +9,7 @@ const TouristInfoCards = () => {
       <div className="column">
         <div className="card">
           <h3>London</h3>
-          <img src={london} />
+          <img src={london} alt="london" />
           <p>
             London, the capital the United Kingdom, is city with history
             stretching back to Roman times.{" "}
@@ -27,7 +27,7 @@ const TouristInfoCards = () => {
       <div className="column">
         <div className="card">
           <h3>Manchester</h3>
-          <img src={manchester} />
+          <img src={manchester} alt="manchester" />
           <p>
             Manchester is a major city in the northwest of England with a rich
             industrial heritage.{" "}
@@ -44,7 +44,7 @@ const TouristInfoCards = () => {
       <div className="column">
         <div className="card">
           <h3>Glasgow</h3>
-          <img src={glasgow} />
+          <img src={glasgow} alt="glasgow" />
           <p>
             Glasgow is a port city on the River Clyde in Scotland's western
             Lowlands.
